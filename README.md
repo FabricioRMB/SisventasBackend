@@ -203,9 +203,50 @@ Este archivo permite importar toda la estructura y parte de los datos necesarios
 
 ## ▶️ Cómo Ejecutar el Sistema Localmente
 
-1. Instala [XAMPP](https://www.apachefriends.org/es/index.html) y ejecuta los módulos **Apache** y **MySQL**.
-2. Copia la carpeta del proyecto `sisventas` dentro de:
+Para probar este sistema en tu computadora, sigue estos pasos:
 
+
+### ⚙️ 1. Iniciar XAMPP
+
+Abre **XAMPP** y activa los siguientes módulos:
+
+- 🟢 Apache  
+- 🟢 MySQL
+
+
+### 📁 2. Colocar el proyecto en la carpeta correcta
+
+Copia la carpeta del proyecto en la siguiente ruta:
+C:\xampp\htdocs\sisventas
+
+
+### 🛠️ 3. Crear la base de datos
+
+Abre tu navegador y accede a:
+http://localhost/phpmyadmin
+
+
+Luego:
+
+1. Crea una base de datos nueva con el nombre: 'sistemaventas'
+2. Haz clic en la pestaña **"Importar"**.
+3. Selecciona el archivo: sistema_ventas.sql
+4. Haz clic en **"Continuar"** para importar los datos correctamente.
+
+
+### 🌐 4. Ingresar al sistema web
+
+Abre tu navegador y escribe: http://localhost/sisventas/
+
+
+### 🔐 5. Acceso con usuario de prueba
+
+Inicia sesión usando las siguientes credenciales:
+
+- 👤 **Usuario:** A01  
+- 🔑 **Contraseña:** 1234
+
+✅ ¡Listo! Ya puedes usar el sistema: registrar productos, realizar ventas, ver reportes, manejar usuarios y más.
 
 
 
