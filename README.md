@@ -94,6 +94,8 @@ Este módulo simula el comportamiento de una tienda real y es el más dinámico 
 - Vista: `vista/producto/store.php`
 - Controlador: `controlador/productoController.php`
 - Modelo: `modelo/producto.php`
+- 
+![menucomprar](https://github.com/user-attachments/assets/96b1d283-9987-4d65-9335-6ffd351b9e7e)
 
 
 
@@ -114,7 +116,7 @@ También permite realizar **consultas de ventas por producto**, mostrando cuánt
 - Controlador: `controlador/productoController.php`
 - Modelo: `modelo/producto.php`
 
-![menu productos](https://github.com/user-attachments/assets/5ddf55f0-1cf1-4d26-8dd8-3b13189ce960)
+![menuproductos](https://github.com/user-attachments/assets/068f8a06-c598-4989-8eb7-fc0119248c55)
 
 
 ### 👤 Clientes
@@ -125,7 +127,7 @@ Módulo para registrar, editar y eliminar clientes. Cada cliente tiene un DNI, n
 - Vistas: `vista/clientes/`
 - Controlador: `controlador/clienteController.php`
 
-![menu clientes](https://github.com/user-attachments/assets/ffa17f61-90e7-46dd-b628-3401dec7db04)
+![menuclientes](https://github.com/user-attachments/assets/fa0ef6a2-ece6-485f-9529-ea56dba59504)
 
 
 ### 🚚 Proveedores
@@ -135,6 +137,8 @@ Permite registrar proveedores que suministran los productos. Cada proveedor tien
 **Archivos relacionados:**
 - Vistas: `vista/proveedores/`
 - Controlador: `controlador/proveedorController.php`
+- 
+![menuproveedores](https://github.com/user-attachments/assets/5814e9b8-f576-4161-b097-f8e0f2f1c941)
 
 
 ### 📊 Ventas
@@ -154,6 +158,7 @@ Sirve como herramienta de análisis o seguimiento de las operaciones realizadas.
 - Controlador: `controlador/productoController.php` (función de consulta)
 - Modelo: `modelo/producto.php`
 
+![menuventas](https://github.com/user-attachments/assets/44d84728-f235-4be1-ad3b-0f1082959fe0)
 
 
 ### 👥 Usuarios
@@ -169,6 +174,8 @@ Incluye control de acceso: solo los usuarios registrados pueden ingresar al sist
   - `login.php`: formulario de acceso.
   - `logout.php`: cierre de sesión.
   - `controlador/loginController.php`: verifica las credenciales.
+  - 
+![menuusuarios](https://github.com/user-attachments/assets/2b267850-7383-46b7-8f0f-9aae6fa6b7a1)
 
 
 ### 🧩 Layout
@@ -246,7 +253,7 @@ Inicia sesión usando las siguientes credenciales:
 - 👤 **Usuario:** A01  
 - 🔑 **Contraseña:** 1234
 
-✅ ¡Listo! Ya puedes usar el sistema: registrar productos, realizar ventas, ver reportes, manejar usuarios y más.
+✅ ¡Listo! Ya puedes usar el sistema: registrar productos, realizar ventas, ver reportes, manejar usuarios y todas las demás opciones que ofrece nuestro sistema.
 
 
 
