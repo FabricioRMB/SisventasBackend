@@ -22,28 +22,65 @@
 
 ## 📁 Estructura del Proyecto
 
-El sistema está organizado siguiendo el patrón Modelo - Vista - Controlador (MVC) de forma simplificada. A continuación, se describen las carpetas principales dentro del sistema:
+El proyecto está organizado en carpetas que siguen el enfoque de separación lógica de responsabilidades. A continuación se describe cada una de estas:
 
--sisventas/
-- **├── controlador/** # Controladores que gestionan la lógica de cada módulo
-- 
--├── includes/ # Configuración general y conexión a base de datos
--├── modelo/ # Clases que representan entidades (ej. Producto)
--├── vista/ # Archivos de interfaz para cada módulo (CRUD, listados, etc.)
--├── index.php # Punto de entrada principal
--├── login.php # Pantalla de inicio de sesión
--└── logout.php # Cierre de sesión
+---
 
-### 🧭 Módulos del sistema
+### 📁 `controlador/`
 
-- **Usuarios**: Registro, edición y control de acceso.
-- **Clientes**: Gestión de clientes (crear, editar, eliminar).
-- **Proveedores**: Registro y edición de proveedores.
-- **Productos**: Control de stock, categorías y CRUD de productos.
-- **Ventas**: Registro de ventas, selección de productos, generación de factura.
-- **Consultas**: Permite ver ventas por producto y estado del inventario.
+Contiene todos los controladores del sistema.  
+Aquí se gestiona la lógica principal para cada módulo: productos, clientes, proveedores, usuarios, etc.
 
-Cada módulo tiene su propio controlador (`controlador/`), vistas (`vista/[modulo]/`) y lógica asociada.
+Dentro tenemos:
+- `clienteController.php`
+- `productoController.php`
+- `usuarioController.php`
+
+---
+
+### 📁 `includes/`
+
+Carpeta donde se encuentra la configuración global del sistema.
+
+Archivos clave:
+- `config.php`: contiene constantes como el nombre del host o credenciales de conexión.
+- `db.php`: contiene la clase que gestiona la conexión a la base de datos con PDO.
+
+---
+
+### 📁 `modelo/`
+
+Contiene las clases que representan entidades o modelos del sistema, en nuestro caso unicamente esta:
+- `producto.php`: contiene atributos y funciones para gestionar productos.
+
+---
+
+### 📁 `vista/`
+
+Es la carpeta que contiene todas las interfaces del sistema (formularios, listados, botones, etc.).  
+Está organizada por subcarpetas según el módulo:
+
+- `clientes/`: Vistas para crear, editar y listar clientes.
+- `producto/`: Formulario de producto, stock, consulta de ventas.
+- `proveedores/`: Mantenimiento de proveedores.
+- `usuarios/`: Gestión de usuarios.
+- `ventas/`: Registro de ventas, selección de productos.
+- `layout/`: Contiene los elementos comunes como cabecera, menú y pie.
+
+---
+
+### 📄 `index.php`
+
+Punto de entrada principal al sistema. Normalmente redirige al login si no hay sesión iniciada.
+
+---
+
+### 📄 `login.php` y `logout.php`
+
+- `login.php`: Página de acceso al sistema con usuario y contraseña.
+- `logout.php`: Destruye la sesión activa y redirige al login.
+
+---
 
 
 
