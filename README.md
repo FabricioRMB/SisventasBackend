@@ -78,16 +78,23 @@ Punto de entrada principal al sistema. Normalmente redirige al login si no hay s
 ## 🔍 Descripción de Módulos
 
 
-### 📦 Compras
+### 🛍️ Comprar
 
-Este módulo permite registrar compras de productos realizadas a los proveedores. Se selecciona un proveedor, la fecha y los productos comprados con su cantidad.
+Este es el módulo principal de punto de venta. Permite al usuario (vendedor o cajero) seleccionar productos, añadirlos a un **carrito de compras**, y registrar la venta.
 
-El módulo actualiza automáticamente el stock del producto comprado, lo que permite mantener sincronizado el inventario.
+Al confirmar la compra:
+
+- Se genera una factura interna.
+- El stock de cada producto se **reduce automáticamente**.
+- Se muestran alertas visuales si algún producto tiene **stock bajo** o está **agotado**.
+
+Este módulo simula el comportamiento de una tienda real y es el más dinámico del sistema.
 
 **Archivos relacionados:**
-- Vista: `vista/producto/compra.php`
-- Controlador: `productoController.php` (funciones específicas para registrar compra)
-- (Utiliza el modelo: `producto.php` para modificar stock)
+- Vista: `vista/producto/store.php`
+- Controlador: `controlador/productoController.php`
+- Modelo: `modelo/producto.php`
+
 
 
 ### 🧾 Productos
@@ -130,17 +137,23 @@ Permite registrar proveedores que suministran los productos. Cada proveedor tien
 - Controlador: `controlador/proveedorController.php`
 
 
+### 📊 Ventas
 
-### 🛒 Ventas
+Este módulo permite **consultar las ventas** que se han realizado en el sistema.
 
-Módulo central del sistema. Permite registrar ventas, seleccionando productos disponibles, cantidades y aplicando descuentos. Se genera una **factura** con los detalles de la venta, fecha, cliente y condición de pago (contado o crédito).
+Incluye un reporte por producto donde se puede ver:
 
-Al registrar una venta, el stock de los productos seleccionados **se actualiza automáticamente**.
+- Total de unidades vendidas por producto.
+- Importe monetario total generado.
+- Fecha de cada venta.
+
+Sirve como herramienta de análisis o seguimiento de las operaciones realizadas.
 
 **Archivos relacionados:**
-- Vistas: `vista/ventas/`
-- Controlador: *(en desarrollo o dividido entre otros controladores)*
-- También se relaciona con `productoController.php` para control de stock.
+- Vista: `vista/producto/consulta_ventas.php`
+- Controlador: `controlador/productoController.php` (función de consulta)
+- Modelo: `modelo/producto.php`
+
 
 
 ### 👥 Usuarios
@@ -168,8 +181,30 @@ Contiene los archivos comunes a todas las páginas del sistema: menú de navegac
   - `menu.php`
   - `pie.php`
 
+---
+## 🗃️ Base de Datos
 
+El sistema utiliza una base de datos relacional en MySQL llamada `sistemaventas`.  
+Contiene las siguientes tablas principales:
 
+- `usuarios`: Manejo de acceso al sistema.
+- `clientes`: Datos de los compradores.
+- `proveedores`: Información de empresas que abastecen los productos.
+- `productos`: Catálogo de productos disponibles, con control de stock y categorías.
+- `categorias`: Clasificación de los productos.
+- `facturas`: Registro de las ventas realizadas.
+- `detallefactura`: Detalle de cada producto vendido.
+- `condicionventa`: Define si la venta fue al contado o al crédito.
+
+📎 Archivo SQL incluido: `sistema_ventas.sql`  
+Este archivo permite importar toda la estructura y parte de los datos necesarios para probar el sistema.
+
+---
+
+## ▶️ Cómo Ejecutar el Sistema Localmente
+
+1. Instala [XAMPP](https://www.apachefriends.org/es/index.html) y ejecuta los módulos **Apache** y **MySQL**.
+2. Copia la carpeta del proyecto `sisventas` dentro de:
 
 
 
