@@ -143,19 +143,20 @@ Permite registrar proveedores que suministran los productos. Cada proveedor tien
 
 ### 📊 Ventas
 
-Este módulo permite **consultar las ventas** que se han realizado en el sistema.
+Este módulo permite consultar las ventas que se han realizado en el sistema.
 
-Incluye un reporte por producto donde se puede ver:
+Incluye un reporte por cliente donde se puede ver:
 
-- Total de unidades vendidas por producto.
+- Cliente que realizo la compra.
+- Condicion de la venta
 - Importe monetario total generado.
+- IGV
 - Fecha de cada venta.
 
 Sirve como herramienta de análisis o seguimiento de las operaciones realizadas.
 
 **Archivos relacionados:**
 - Vista: `vista/producto/consulta_ventas.php`
-- Controlador: `controlador/productoController.php` (función de consulta)
 - Modelo: `modelo/producto.php`
 
 ![menuventas](https://github.com/user-attachments/assets/44d84728-f235-4be1-ad3b-0f1082959fe0)
@@ -341,6 +342,120 @@ Boton "BUSCAR": Nos permite realizar busquedas de clientes ya sea por:
 Mensaje despues de una busqueda exitosa de un cliente:
 
 ![busquedaclieexitosa](https://github.com/user-attachments/assets/04eb2b8f-1f18-4e7c-9397-5d7d745a3911)
+
+
+### 📦 Módulo de Productos
+
+Gestión completa del catálogo de productos (nombre, stock, precio, categoría, etc.)
+
+![menuproductos](https://github.com/user-attachments/assets/27ff7e2a-fbc2-4151-b57a-b1c512e89a13)
+
+Vista a agregar producto:
+
+![agregarproducto](https://github.com/user-attachments/assets/3f245250-ba33-4033-9a9e-c9823feed520)
+
+Vista a editar producto:
+
+![editarproducto](https://github.com/user-attachments/assets/8184c476-d0cf-4ea4-9a06-4dd7f4f44ea9)
+
+Mensaje de confirmacion para eliminar un producto:
+
+![eliminarproducto](https://github.com/user-attachments/assets/cae74a52-96d8-4dae-9954-fe1c987dd27f)
+
+Boton "BUSCAR": Nos permite realizar busquedas de productos ya sea por: 
+--> ID
+--> Nombre
+--> Categoria
+
+![probuscarid](https://github.com/user-attachments/assets/da062a6b-c42f-46ba-9e84-f7270963f7a7)
+
+Con una busqueda existosa nos enviara el siguiente mensaje:
+
+![busquedaexitosapro](https://github.com/user-attachments/assets/46f3499f-70e5-4a78-955f-ab03b9210db1)
+
+Boton "REPORTE": Nos permite ver las ganancias por cada producto vendido, podemos filtrar estas por dia, mes o poner nuestro propio lapso de tiempo personalizado:
+
+![reporteganancias](https://github.com/user-attachments/assets/e771dbb3-60d0-438f-9a5f-78f26ec4e751)
+
+
+### 🚚 Módulo de Proveedores
+
+Módulo para registrar y administrar proveedores.
+
+![menuproveedores](https://github.com/user-attachments/assets/c2e51e79-40d5-4e56-9480-5929b472c72a)
+
+Vista a agregar proveedores:
+
+![agregarprove](https://github.com/user-attachments/assets/7119c784-8bbd-43c1-aa7b-7d66404c5e5a)
+
+Vista a editar proveedores:
+
+![editarprove](https://github.com/user-attachments/assets/5bcb4674-27a9-4345-aadc-06b1dc9a04fc)
+
+Mensaje de confirmacion para eliminar un proveedor:
+
+![eliminarprove](https://github.com/user-attachments/assets/7ee694b6-4802-48ae-9576-71bef43edebc)
+
+Boton "BUSCAR": Nos permite realizar busquedas de proveedores ya sea por: 
+--> ID
+--> Nombre
+
+![buscarprove](https://github.com/user-attachments/assets/12cd85e7-4751-4db5-99f8-2c43b1f8a5a3)
+
+Con una busqueda existosa nos enviara el siguiente mensaje:
+
+![busquedaproveexitosa](https://github.com/user-attachments/assets/edeb2185-67e3-4570-ac02-ba46612ad396)
+
+### 🧑‍💼 Módulo de Usuarios
+
+Gestión de usuarios del sistema.
+
+![menuusuarios](https://github.com/user-attachments/assets/5982d796-f489-4b8b-a41e-ae99bd161170)
+
+Vista a agregar usuarios:
+
+![agregarusuario](https://github.com/user-attachments/assets/b400fb62-e2df-4bc8-b3d6-70c19d65fe6c)
+
+Vista a editar usuarios (la ID no es editable):
+
+![editusuario](https://github.com/user-attachments/assets/1e1f9516-0619-45ef-8191-2d62f1c15377)
+
+Mensaje de confirmacion para eliminar un usuario:
+
+![elimusuario](https://github.com/user-attachments/assets/2f4360e9-5602-419b-992a-c70f22c7c7cb)
+
+Boton "BUSCAR": Nos permite realizar busquedas de usuarios ya sea por: 
+--> ID
+--> Nombre
+
+![buscarusuario](https://github.com/user-attachments/assets/595f061b-0624-4deb-8082-eb8ff15f188a)
+
+Con una busqueda existosa nos enviara el siguiente mensaje:
+
+![busquedausuexitosa](https://github.com/user-attachments/assets/e5dfbd48-3253-4ca6-99f3-6224f8577af0)
+
+
+### 📈 Modulo de Ventas
+
+Muestra un listado de todas las facturas emitadas por el sistema, en cada una se puede ver los detalles de la venta.
+
+![ventas](https://github.com/user-attachments/assets/2ab06201-e601-4eaf-bbf8-476c4fa00e60)
+
+Boton "BUSCAR": Nos permite realizar busquedas de facturas ya sea por: 
+--> ID Factura
+--> Cliente
+--> Condicion
+
+![buscarfactura](https://github.com/user-attachments/assets/a2bc2ca4-b70d-49c0-b12a-1954f5fdf795)
+
+Con una busqueda existosa nos enviara el siguiente mensaje:
+
+![busquedafacturaexitosa](https://github.com/user-attachments/assets/782a310a-42c9-4426-8d8a-9e8c55d3bdcf)
+
+Boton "REPORTE" nos dejara filtrar las facturas por mes, día o un lapso de tiempo de nuestra preferencia. Se nos mostrara la fecha, el total de facturas emitidas y el monto total vendido
+
+
+![reportefacturas](https://github.com/user-attachments/assets/c10b428a-0b4e-4d5d-8860-184aec0480a5)
 
 ---
 ## 👥 Integrantes del Proyecto
