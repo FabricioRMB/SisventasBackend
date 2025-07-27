@@ -80,7 +80,7 @@ Punto de entrada principal al sistema. Normalmente redirige al login si no hay s
 
 ### 🛍️ Comprar
 
-Este es el módulo principal de punto de venta. Permite al usuario (vendedor o cajero) seleccionar productos, añadirlos a un **carrito de compras**, y registrar la venta.
+Este es el módulo principal de punto de venta. Permite al usuario (vendedor o cliente) seleccionar productos, añadirlos a un **carrito de compras**, y registrar la venta.
 
 Al confirmar la compra:
 
@@ -255,6 +255,102 @@ Inicia sesión usando las siguientes credenciales:
 
 ✅ ¡Listo! Ya puedes usar el sistema: registrar productos, realizar ventas, ver reportes, manejar usuarios y todas las demás opciones que ofrece nuestro sistema.
 
+---
+## 📸 Capturas del sistema/pruebas
+
+A continuación se muestran algunas vistas del sistema en funcionamiento:
+
+### 🔐 Inicio de sesion
+
+Interfaz para ingresar al sistema con un usuario registrado.
+
+![menuiniciosesion](https://github.com/user-attachments/assets/b8488155-93fd-4e68-8fc5-d312e3252999)
+
+
+### 🧾 Menú Principal
+
+Vista principal del sistema luego de iniciar sesión. Permite acceder a todos los módulos.
+
+![menuprincipal](https://github.com/user-attachments/assets/46fb9671-2ec6-4e0e-8e29-61d8ac3f94a7)
+
+
+### 🛒 Módulo Comprar
+
+Simula la experiencia de compra: muestra los productos y sus datos (ID,precio,stock,etc.), muestra mensajes en caso de poco o nulo stock, permite agregarlos al carrito y finalizar la venta.
+
+![menucomprasf](https://github.com/user-attachments/assets/1fa267cc-09a3-4d0e-a5de-d3c547e40171)
+
+Vista para agregar un producto al carrito:
+
+![agregarcarrito](https://github.com/user-attachments/assets/b69a2b0c-462a-4599-9c90-1ac1f6460ce4)
+
+Vista del carrito:
+
+![carrito](https://github.com/user-attachments/assets/e8d66dc1-43a6-4af4-9e87-e732d2b4d93b)
+
+Vistas de la factura:
+
+![factura1](https://github.com/user-attachments/assets/d09ee66f-6e95-4811-9784-9eb71baa4caf)
+
+![factura2](https://github.com/user-attachments/assets/029ceb3d-3fc3-4e87-83db-e1ec0ef5f1e3)
+
+Vista de la confirmacion de pago:
+
+![confirmacionpago](https://github.com/user-attachments/assets/f0d2b92d-ec49-43cc-b633-06077ab45460)
+
+Al momento de realizar un pago en el menu nos aparecera un mensaje de que nuestra compra se realizo con exito:
+
+![mensajecompraexitosa](https://github.com/user-attachments/assets/be4b94a6-e502-4e54-b471-bdb8c3206e8d)
+
+Boton "BUSCAR": Nos permite realizar busquedas de productos ya sea por:
+--> ID
+--> Nombre
+--> Categoria
+
+![probuscarid](https://github.com/user-attachments/assets/da062a6b-c42f-46ba-9e84-f7270963f7a7)
+
+Con una busqueda existosa nos enviara el siguiente mensaje:
+
+![busquedaexitosapro](https://github.com/user-attachments/assets/46f3499f-70e5-4a78-955f-ab03b9210db1)
+
+
+### 👥 Módulo de Clientes
+
+Permite registrar, listar, editar y eliminar clientes.
+
+![menuclientes](https://github.com/user-attachments/assets/89cc940b-f1cd-4c76-aab8-c3db2725ba69)
+
+Vista a agregar cliente:
+
+![agregarcliente](https://github.com/user-attachments/assets/789a7502-fd1e-4959-adf6-aba8603a96d7)
+
+Vista a editar cliente:
+
+![editcliente](https://github.com/user-attachments/assets/8a6f2de5-652a-4632-82da-cd7057828628)
+
+Mensaje de confirmacion para eliminar cliente:
+
+![eliminarclie](https://github.com/user-attachments/assets/8c88b467-3f5e-422f-8c82-76923471ea31)
+
+Boton "BUSCAR": Nos permite realizar busquedas de clientes ya sea por:
+--> ID
+--> Nombre
+
+![buscarcliente](https://github.com/user-attachments/assets/d5ebdefd-b83f-4cc9-93d0-387a06993b4c)
+
+Mensaje despues de una busqueda exitosa de un cliente:
+
+![busquedaclieexitosa](https://github.com/user-attachments/assets/04eb2b8f-1f18-4e7c-9397-5d7d745a3911)
+
+---
+## 👥 Integrantes del Proyecto
+
+| Nº |           Nombres y Apellidos           | Rol en el equipo |
+|----|-----------------------------------------|------------------|
+| 1  | JHOSIMAR FRED PANTA CUADROS             | Jefe de Proyecto |
+| 2  | JAIR CARPIO LEON                        | Programador      |
+| 3  | ELIZABETH PACCO LAURA                   | Programadora     |
+| 4  | FABRICIO ROBERTH MOLLEHUANCA BUSTAMANTE | Documentador     |
 
 
 
