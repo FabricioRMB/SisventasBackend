@@ -81,6 +81,87 @@ Punto de entrada principal al sistema. Normalmente redirige al login si no hay s
 
 ---
 
+## 🔍 Descripción de Módulos
+
+---
+
+### 🧾 Productos
+
+Este módulo permite gestionar todos los productos disponibles para la venta. Cada producto tiene nombre, precio, stock actual, stock mínimo, categoría y proveedor asignado.
+
+Incluye una **alerta visual** en el listado cuando el stock actual cae por debajo del mínimo, para facilitar el control de inventario.
+
+También permite realizar **consultas de ventas por producto**, mostrando cuántas veces se vendió cada producto, el total recaudado, y fechas.
+
+**Archivos relacionados:**
+- Vistas:
+  - `vista/producto/listado.php`: listado de productos con controles de edición y alerta por stock.
+  - `vista/producto/crear.php`: formulario de registro de producto.
+  - `vista/producto/update.php`: formulario de edición de producto existente.
+  - `vista/producto/consulta_ventas.php`: consulta de ventas por producto.
+- Controlador: `controlador/productoController.php`
+- Modelo: `modelo/producto.php`
+
+---
+
+### 👤 Clientes
+
+Módulo para registrar, editar y eliminar clientes. Cada cliente tiene un DNI, nombres, apellidos, teléfono y dirección. Esta información se asocia a cada venta realizada.
+
+**Archivos relacionados:**
+- Vistas: `vista/clientes/`
+- Controlador: `controlador/clienteController.php`
+
+---
+
+### 🚚 Proveedores
+
+Permite registrar proveedores que suministran los productos. Cada proveedor tiene nombre, dirección, teléfono, y correo electrónico.
+
+**Archivos relacionados:**
+- Vistas: `vista/proveedores/`
+- Controlador: `controlador/proveedorController.php`
+
+---
+
+### 🛒 Ventas
+
+Módulo central del sistema. Permite registrar ventas, seleccionando productos disponibles, cantidades y aplicando descuentos. Se genera una **factura** con los detalles de la venta, fecha, cliente y condición de pago (contado o crédito).
+
+Al registrar una venta, el stock de los productos seleccionados **se actualiza automáticamente**.
+
+**Archivos relacionados:**
+- Vistas: `vista/ventas/`
+- Controlador: *(en desarrollo o dividido entre otros controladores)*
+- También se relaciona con `productoController.php` para control de stock.
+
+---
+
+### 👥 Usuarios
+
+Permite crear, editar y eliminar cuentas de usuarios del sistema. Cada usuario tiene un código único, contraseña y nombre.
+
+Incluye control de acceso: solo los usuarios registrados pueden ingresar al sistema.
+
+**Archivos relacionados:**
+- Vistas: `vista/usuarios/`
+- Controlador: `controlador/usuarioController.php`
+- Login:
+  - `login.php`: formulario de acceso.
+  - `logout.php`: cierre de sesión.
+  - `controlador/loginController.php`: verifica las credenciales.
+
+---
+
+### 🧩 Layout (Diseño común)
+
+Contiene los archivos comunes a todas las páginas del sistema: menú de navegación, encabezado, pie de página, y estilos generales.
+
+**Archivos relacionados:**
+- Carpeta: `vista/layout/`
+  - `cabecera.php`
+  - `menu.php`
+  - `pie.php`
 
 
 
