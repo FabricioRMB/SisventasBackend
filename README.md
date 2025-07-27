@@ -24,7 +24,6 @@
 
 El proyecto está organizado en carpetas que siguen el enfoque de separación lógica de responsabilidades. A continuación se describe cada una de estas:
 
---
 
 ### 📁 `controlador/`
 
