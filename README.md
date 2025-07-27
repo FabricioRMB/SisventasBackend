@@ -26,6 +26,7 @@ El sistema está organizado siguiendo el patrón Modelo - Vista - Controlador (M
 
 -sisventas/
 - **├── controlador/** # Controladores que gestionan la lógica de cada módulo
+- 
 -├── includes/ # Configuración general y conexión a base de datos
 -├── modelo/ # Clases que representan entidades (ej. Producto)
 -├── vista/ # Archivos de interfaz para cada módulo (CRUD, listados, etc.)
