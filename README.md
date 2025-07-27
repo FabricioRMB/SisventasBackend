@@ -7,10 +7,12 @@
 ## ⚙️ Tecnologías Utilizadas
 
 - PHP (Programación Orientada a Objetos)
-- MySQL / MariaDB
+- MySQL
 - HTML y CSS
 - JavaScript
 - Servidor local: XAMPP
+- Universe.io (Diseño de interfaces y prototipos)
+
 
 ---
 
