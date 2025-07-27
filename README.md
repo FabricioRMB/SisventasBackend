@@ -73,11 +73,11 @@ Punto de entrada principal al sistema. Normalmente redirige al login si no hay s
 
 - `login.php`: Página de acceso al sistema con usuario y contraseña.
 - `logout.php`: Destruye la sesión activa y redirige al login.
-
+---
 
 ## 🔍 Descripción de Módulos
 
----
+
 
 ### 🧾 Productos
 
