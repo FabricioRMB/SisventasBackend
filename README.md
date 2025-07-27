@@ -20,3 +20,38 @@
 
 ## 📁 Estructura del Proyecto
 
+El sistema está organizado siguiendo el patrón Modelo - Vista - Controlador (MVC) de forma simplificada. A continuación, se describen las carpetas principales:
+
+sisventas/
+├── controlador/ # Controladores que gestionan la lógica de cada módulo
+├── includes/ # Configuración general y conexión a base de datos
+├── modelo/ # Clases que representan entidades (ej. Producto)
+├── vista/ # Archivos de interfaz para cada módulo (CRUD, listados, etc.)
+├── index.php # Punto de entrada principal
+├── login.php # Pantalla de inicio de sesión
+└── logout.php # Cierre de sesión
+
+### 🧭 Módulos del sistema
+
+- **Usuarios**: Registro, edición y control de acceso.
+- **Clientes**: Gestión de clientes (crear, editar, eliminar).
+- **Proveedores**: Registro y edición de proveedores.
+- **Productos**: Control de stock, categorías y CRUD de productos.
+- **Ventas**: Registro de ventas, selección de productos, generación de factura.
+- **Consultas**: Permite ver ventas por producto y estado del inventario.
+
+Cada módulo tiene su propio controlador (`controlador/`), vistas (`vista/[modulo]/`) y lógica asociada.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
