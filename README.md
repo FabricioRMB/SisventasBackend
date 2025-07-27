@@ -35,7 +35,6 @@ Dentro tenemos:
 - `productoController.php`
 - `usuarioController.php`
 
----
 
 ### 📁 `includes/`
 
@@ -45,14 +44,12 @@ Archivos clave:
 - `config.php`: contiene constantes como el nombre del host o credenciales de conexión.
 - `db.php`: contiene la clase que gestiona la conexión a la base de datos con PDO.
 
----
 
 ### 📁 `modelo/`
 
 Contiene las clases que representan entidades o modelos del sistema, en nuestro caso unicamente esta:
 - `producto.php`: contiene atributos y funciones para gestionar productos.
 
----
 
 ### 📁 `vista/`
 
@@ -66,20 +63,18 @@ Está organizada por subcarpetas según el módulo:
 - `ventas/`: Registro de ventas, selección de productos.
 - `layout/`: Contiene los elementos comunes como cabecera, menú y pie.
 
----
+
 
 ### 📄 `index.php`
 
 Punto de entrada principal al sistema. Normalmente redirige al login si no hay sesión iniciada.
 
----
 
 ### 📄 `login.php` y `logout.php`
 
 - `login.php`: Página de acceso al sistema con usuario y contraseña.
 - `logout.php`: Destruye la sesión activa y redirige al login.
 
----
 
 ## 🔍 Descripción de Módulos
 
@@ -102,7 +97,6 @@ También permite realizar **consultas de ventas por producto**, mostrando cuánt
 - Controlador: `controlador/productoController.php`
 - Modelo: `modelo/producto.php`
 
----
 
 ### 👤 Clientes
 
@@ -112,7 +106,6 @@ Módulo para registrar, editar y eliminar clientes. Cada cliente tiene un DNI, n
 - Vistas: `vista/clientes/`
 - Controlador: `controlador/clienteController.php`
 
----
 
 ### 🚚 Proveedores
 
@@ -122,7 +115,6 @@ Permite registrar proveedores que suministran los productos. Cada proveedor tien
 - Vistas: `vista/proveedores/`
 - Controlador: `controlador/proveedorController.php`
 
----
 
 ### 🛒 Ventas
 
@@ -135,7 +127,6 @@ Al registrar una venta, el stock de los productos seleccionados **se actualiza a
 - Controlador: *(en desarrollo o dividido entre otros controladores)*
 - También se relaciona con `productoController.php` para control de stock.
 
----
 
 ### 👥 Usuarios
 
@@ -151,9 +142,8 @@ Incluye control de acceso: solo los usuarios registrados pueden ingresar al sist
   - `logout.php`: cierre de sesión.
   - `controlador/loginController.php`: verifica las credenciales.
 
----
 
-### 🧩 Layout (Diseño común)
+### 🧩 Layout
 
 Contiene los archivos comunes a todas las páginas del sistema: menú de navegación, encabezado, pie de página, y estilos generales.
 
