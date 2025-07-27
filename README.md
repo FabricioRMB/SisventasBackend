@@ -78,6 +78,17 @@ Punto de entrada principal al sistema. Normalmente redirige al login si no hay s
 ## 🔍 Descripción de Módulos
 
 
+### 📦 Compras
+
+Este módulo permite registrar compras de productos realizadas a los proveedores. Se selecciona un proveedor, la fecha y los productos comprados con su cantidad.
+
+El módulo actualiza automáticamente el stock del producto comprado, lo que permite mantener sincronizado el inventario.
+
+**Archivos relacionados:**
+- Vista: `vista/producto/compra.php`
+- Controlador: `productoController.php` (funciones específicas para registrar compra)
+- (Utiliza el modelo: `producto.php` para modificar stock)
+
 
 ### 🧾 Productos
 
@@ -96,6 +107,8 @@ También permite realizar **consultas de ventas por producto**, mostrando cuánt
 - Controlador: `controlador/productoController.php`
 - Modelo: `modelo/producto.php`
 
+![menu productos](https://github.com/user-attachments/assets/5ddf55f0-1cf1-4d26-8dd8-3b13189ce960)
+
 
 ### 👤 Clientes
 
@@ -105,6 +118,8 @@ Módulo para registrar, editar y eliminar clientes. Cada cliente tiene un DNI, n
 - Vistas: `vista/clientes/`
 - Controlador: `controlador/clienteController.php`
 
+![menu clientes](https://github.com/user-attachments/assets/ffa17f61-90e7-46dd-b628-3401dec7db04)
+
 
 ### 🚚 Proveedores
 
@@ -113,6 +128,7 @@ Permite registrar proveedores que suministran los productos. Cada proveedor tien
 **Archivos relacionados:**
 - Vistas: `vista/proveedores/`
 - Controlador: `controlador/proveedorController.php`
+
 
 
 ### 🛒 Ventas
